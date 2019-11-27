@@ -1,3 +1,11 @@
+# Uses an Adafruit Circuit Playground Bluefruit:
+# https://www.adafruit.com/product/4333
+# Complete parts list in the build video at:
+# https://youtu.be/AHcwQRxTjOY
+# By Prof. John Gallaugher
+# Like this? Have corrections / suggestions / improvements?
+# Let me know! @gallaugher  and  gallaugher.com
+
 import board
 import time
 import digitalio
@@ -108,8 +116,7 @@ def checkTouch():
 def openLid():
     for i in range(116):
         lid_servo.angle = i
-        print(i)
-        if i > 10:
+        if i > 0:
             time.sleep(0.05)
 
 while True:
