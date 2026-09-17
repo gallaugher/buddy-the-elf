@@ -32,8 +32,6 @@ from adafruit_bluefruit_connect.button_packet import ButtonPacket
 
 # setup bluetooth
 ble = BLERadio()
-# setup bluetooth
-ble = BLERadio()
 ble.name = "Buddy the Elf"
 uart_server = UARTService()
 advertisement = ProvideServicesAdvertisement(uart_server)
